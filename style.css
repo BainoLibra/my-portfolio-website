@@ -28,6 +28,7 @@ header{
 }
 nav{
     overflow: hidden;
+    clear: both;
 }
 nav ul li{
     display: flex;
