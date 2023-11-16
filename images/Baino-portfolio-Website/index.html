@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra's Portifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Libra's</span> Portifolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portifolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <p>Innovating Oil and Gas Management</p>
+                <h1>Driving Innovation <br> in Oil and Gas <span class="highlight">Management</span></h1>
+            </div>
+        </div>
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/STU (2).jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Bainomugisha is a motivated and self-driven individual with good academic and interpersonal skills and the capacity to communicate clearly and simply with clients and colleagues while maintaining a high standard of honesty. She holds a Bachelor's degree in Oil and Gas Management from Uganda Technology and Management University (UTAMU) and possesses extensive experience in the field of computing. Bainomugisha takes pride in being a member of a productive and successful team and has proven to have a good aptitude for leadership in a challenging and intensely competitive industry. Finally, Bainomugisha appreciates working in a team to solve challenges from the actual world and doing so with less oversight.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab (skills)">Skills</p>
+                            <p class="tab-links" onclick="opentab (experience)" >Experience</p>
+                            <p class="tab-links" onclick="opentab (education)" >Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Website Management (static)</span><br>Content Creation</li>
+                                <li><span>Microsoft Office Package</span><br>Graphic Design</li>
+                                <li><span>Data Entry</span><br>Record Management</li>
+                                <li><span>Communication both efficient and effectively</span><br>Planning</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>Sep 2022-Sep 2023</span><br>Front Desk Officer(intern) at Uganda Technology and Management University (UTAMU)</li>
+                                <li><span>May 2022-July 2022</span><br>Interenship at Ministry of Energy and Urban Development</li>
+                                <li><span>May 2021-Aug 2021</span><br>Internship at Nile Energy Limited (Gaz)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Digital Marketing from InfoClan Uganda Limited</li>
+                                <li><span>2019-2022</span><br>Bachelor’s Degree of Oil and Gas Management from Uganda Technology and Management University (UTAMU)</li>
+                                <li><span>2017-2018</span><br>Uganda Advanced Certificate of Education (UACE) from St. Mary’s College Rushoroza </li>
+                                <li><span>2013-2016</span><br>Uganda Certificate of Education (UCE) from St. Mary’s College Rushoroza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- services -->
+         <div id="Services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>Web design enthusiast with a background in oil and gas management. Passionate about crafting visually appealing and user-friendly websites. Bridging managerial expertise with creative innovation to deliver seamless online experiences.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <h2>Graphic Design</h2>
+                        <p>Graphic design is my canvas for storytelling.My passion lies in creating compelling and impactful designs that resonate with audiences. From concept to execution, I bring a blend of creativity and precision to every project, ensuring a visual language that communicates effectively and leaves a lasting impression.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <h2>Content Writing</h2>
+                        <p>Content creator with a flair for words and a passion for storytelling. My expertise lies in crafting engaging and impactful content that resonates with readers. From blog posts to website copy, I specialize in turning ideas into compelling narratives that captivate and inform. Let's bring your brand's story to life through the power of words.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <div class="sub-title">Contact Me</div>
+                        <p>librabainomugisha@gmail.com</p>
+                        <p>+256-778764631 / +256-708523529</p>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="click">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Libra. In Love with programming</p>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName (tab-links);
+            var tabcontent = document.getElementsByClassName (tab-content);
+            
+            function opentab (tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-link");
+                }
+            }
+        </script>
+        
+    </header>
+</body>
+</html>
