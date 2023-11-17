@@ -45,7 +45,7 @@
                             <p class="tab-links" onclick="opentab (experience)" data-tab="experience" >Experience</p>
                             <p class="tab-links" onclick="opentab (education)" data-tab="education">Education</p>
                         </div>
-                        <div class="tab-content active-tab" id="skills">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>Website Management (static)</span><br>Content Creation</li>
                                 <li><span>Microsoft Office Package</span><br>Graphic Design</li>
@@ -54,7 +54,7 @@
                             </ul>
                         </div>
 
-                        <div class="tab-content" id="experience">
+                        <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>Sep 2022-Sep 2023</span><br>Front Desk Officer(intern) at Uganda Technology and Management University (UTAMU)</li>
                                 <li><span>May 2022-July 2022</span><br>Interenship at Ministry of Energy and Urban Development</li>
@@ -62,7 +62,7 @@
                             </ul>
                         </div>
 
-                        <div class="tab-content" id="education">
+                        <div class="tab-contents" id="education">
                             <ul>
                                 <li><span>2023</span><br>Digital Marketing from InfoClan Uganda Limited</li>
                                 <li><span>2019-2022</span><br>Bachelor’s Degree of Oil and Gas Management from Uganda Technology and Management University (UTAMU)</li>
@@ -140,7 +140,7 @@
 
         <script>
             var tablinks = document.querySelectorAll(".tab-links");
-            var tabcontents = document.querySelectorAll(".tab-content");
+            var tabcontents = document.querySelectorAll(".tab-contents");
 
             function opentab(tabname) {
             for (let tablink of tablinks) {
@@ -152,8 +152,6 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab");
          }
-         
-
         </script>
         
     </header>
